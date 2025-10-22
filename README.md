@@ -1,5 +1,8 @@
 Map Viewer
 ---
+Simple (and wack) map viewer project
+ > Moved from original repository as its own repository (HTML-CSS)
+
 Currently contains maps for:
  - Hollow Knight
  - Hollow Knight: Silksong
