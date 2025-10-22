@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mainPage.css">
+    <link rel="stylesheet" href="dropdown.css">
+    <title>Map Viewer Project</title>
+</head>
+<body>
+    <div class="legendBlock">
+        <div class="legendControls">
+            <p>Up<kbd>W</kbd></p>
+            <p>Left<kbd>A</kbd></p>
+            <p>Down<kbd>S</kbd></p>
+            <p>Right<kbd>D</kbd></p>
+            <p>Zoom In<kbd>E</kbd></p>
+            <p>Zoom Out<kbd>Q</kbd></p>
+        </div>
+        <div class="legendToggleables">
+            <p>Mouse Controls<kbd  id="kbd_1">Ctrl</kbd></p>  
+            <p> Mouse: <b id="mouseStatus">On</b></p>
+            <p>Step Change<kbd  id="kbd_2">Shift</kbd></p>  
+            <p> Step Speed: <b id="stepStatus">Normal</b></p>
+        </div>
+        <div class="dropdown">
+            <button class="dropdownButton">Select Image <img src="resources/pageResources/angle-small-down.png" alt="downArrow" id="downArrow"></button>
+            <div class="dropdownContent">
+                <a data-img="hallownest.png">Hollow Knight</a>
+                <a data-img="hallownestHD.png">Hollow Knight (High Resolution)</a>
+                <a data-img="pharloom.png">Hollow Knight: Silksong</a>
+                <a data-img="newkunlun.png">Nine Sols (Wip)</a>
+                <a data-img="rainworldmap_base.png">Rainworld (Survivor, Monk, Hunter, Gourmand)</a>
+                <a data-img="rainworldmap_arti.png">Rainworld (Artificer)</a>
+                <a data-img="rainworldmap_riv.png">Rainworld (Rivulet)</a>
+                <a data-img="rainworldmap_spear.png">Rainworld (Spearmaster)</a>
+                <a data-img="rainworldmap_saint.png">Rainworld (Saint)</a>
+            </div>
+        </div>
+    </div>
+    <img src="resources/pageResources/unloaded.png"id="img">
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/012/011/581/small/white-circle-frame-with-shadow-free-png.png" alt="crosshair" id="crosshair">
+    <script src="controls.js"></script>
+    <script src="imageLoader.js"></script>
+</body>
+</html>
